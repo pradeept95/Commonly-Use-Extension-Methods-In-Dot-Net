@@ -4438,16 +4438,6 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
-      },
-      "Application.Helpers.Extensions/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
-        "compile": {
-          "bin/placeholder/Application.Helpers.Extensions.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Application.Helpers.Extensions.dll": {}
-        }
       }
     }
   },
@@ -8346,7 +8336,7 @@
       ]
     },
     "System.Diagnostics.FileVersionInfo/4.3.0": {
-      "sha512": "6WVi7gArhxRiC+3qI5V2mFe1gHENj/F7xT5PQiy/lI/RsxXeivrt09WF0huwSQK2ubnmyyRFeA9z3w743/w32A==",
+      "sha512": "omCF64wzQ3Q2CeIqkD6lmmxeMZtGHUmzgFMPjfVaOsyqpR66p/JaZzManMw1s33osoAb5gqpncsjie67+yUPHQ==",
       "type": "package",
       "path": "system.diagnostics.fileversioninfo/4.3.0",
       "files": [
@@ -12069,16 +12059,10 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
-    },
-    "Application.Helpers.Extensions/1.0.0": {
-      "type": "project",
-      "path": "../../Helpers/Application.Helpers.Extensions/Application.Helpers.Extensions.csproj",
-      "msbuildProject": "../../Helpers/Application.Helpers.Extensions/Application.Helpers.Extensions.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "Application.Helpers.Extensions >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0"
@@ -12086,6 +12070,7 @@
   },
   "packageFolders": {
     "C:\\Users\\pradeeppc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Xamarin\\NuGet\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
@@ -12098,11 +12083,13 @@
       "outputPath": "E:\\MyProj\\ExtensionHelper\\Application.Host\\Application.Host\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
+        "C:\\Program Files (x86)\\Xamarin\\NuGet\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
         "C:\\Users\\pradeeppc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.2"
@@ -12113,11 +12100,7 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {
-            "E:\\MyProj\\ExtensionHelper\\Helpers\\Application.Helpers.Extensions\\Application.Helpers.Extensions.csproj": {
-              "projectPath": "E:\\MyProj\\ExtensionHelper\\Helpers\\Application.Helpers.Extensions\\Application.Helpers.Extensions.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

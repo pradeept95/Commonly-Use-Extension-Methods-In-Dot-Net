@@ -596,5 +596,18 @@ namespace Application.Helpers.Extensions
         }
 
 
+        // ********************************************************************************
+        /// <summary>
+        /// It will catch runs of any kind of whitespace (e.g. tabs, newlines, etc.) and replace them with a single space
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
+        /// <created>Pradeep Raj Thapaliya,3/15/2019</created>
+        /// <changed>Pradeep Raj Thapaliya,3/15/2019</changed>
+        // ********************************************************************************
+        public static string TrimInnerSpaces(this string input)
+        {
+            return Regex.Replace(input, @"\s+", " ");
+        }
     }
 }
