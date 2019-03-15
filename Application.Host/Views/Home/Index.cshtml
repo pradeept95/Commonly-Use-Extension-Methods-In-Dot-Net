@@ -1,8 +1,35 @@
-﻿@{
+﻿@using Application.Host.Controllers
+@model IEnumerable<StringStatus<string>>
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Welcome, Example of an Extension Helpers</h1>
+
+    <div class="container">
+        <h2>Examples</h2>
+        <p> </p>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ExtensionMethod</th>
+                    <th>Description</th> 
+                    <th>Result</th>
+                    <th>Original String</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>@item.ExtensionMethod</td>
+                    <td>@item.ActionName</td>
+                    <td>@item.NormalizedResult</td>
+                    <td><pre>@String.Format(@item.OriginalString)</pre></td>
+                </tr>
+                } 
+            </tbody>
+        </table>
+    </div>
 </div>

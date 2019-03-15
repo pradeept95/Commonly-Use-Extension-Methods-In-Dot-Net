@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Application.Host.Models;
+using Application.Helpers.Extensions;
 
 namespace Application.Host.Controllers
 {
@@ -12,7 +13,19 @@ namespace Application.Host.Controllers
     {
         public IActionResult Index()
         {
-            return View();
+            var result = new List<StringStatus<string>>();
+            var objTrimInner = new StringStatus<string>() {
+                ActionName = "Trim All Inner Spaces",
+                ExtensionMethod = "TrimInnerSpaces",
+                OriginalString = "This is     string with  multiple   spaces in this paragraph. It      should remove all     unnecessary spaces  from the string.       ", 
+            };
+
+            objTrimInner.NormalizedResult = objTrimInner.OriginalString.TrimInnerSpaces();
+
+            result.Add(objTrimInner);
+
+
+            return View(result);
         }
 
         public IActionResult Privacy()
@@ -25,5 +38,14 @@ namespace Application.Host.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+    }
+
+    public class StringStatus<T> where T: class
+    {
+        public string ActionName { get; set; }
+        public string ExtensionMethod { get; set; }
+        public string OriginalString { get; set; }
+        public T NormalizedResult { get; set; }
+        public object ExtraResult { get; set; }
     }
 }
