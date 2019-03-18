@@ -14,6 +14,8 @@ namespace Application.Host.Controllers
         public IActionResult Index()
         {
             var result = new List<StringStatus<string>>();
+
+            #region TrimInnerSpaces
             var objTrimInner = new StringStatus<string>()
             {
                 ActionName = "Trim All Inner Spaces",
@@ -24,7 +26,9 @@ namespace Application.Host.Controllers
             objTrimInner.NormalizedResult = objTrimInner.OriginalString.TrimInnerSpaces();
 
             result.Add(objTrimInner);
+            #endregion
 
+            #region UrlEncode
 
             var objUrlEncode = new StringStatus<string>
             {
@@ -36,6 +40,21 @@ namespace Application.Host.Controllers
             objUrlEncode.NormalizedResult = objUrlEncode.OriginalString.UrlEncode();
 
             result.Add(objUrlEncode);
+            #endregion
+
+            #region objUrlPathEncode
+
+            var objUrlPathEncode = new StringStatus<string>
+            {
+                ActionName = "Url Path encode",
+                ExtensionMethod = "objUrlPathEncode",
+                OriginalString = "https://www.google.com/search?q=url encode example in c#"
+            };
+
+            objUrlPathEncode.NormalizedResult = objUrlEncode.OriginalString.UrlPathEncode();
+
+            result.Add(objUrlPathEncode);
+            #endregion
 
             return View(result);
         }
