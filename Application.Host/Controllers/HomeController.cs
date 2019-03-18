@@ -14,16 +14,28 @@ namespace Application.Host.Controllers
         public IActionResult Index()
         {
             var result = new List<StringStatus<string>>();
-            var objTrimInner = new StringStatus<string>() {
+            var objTrimInner = new StringStatus<string>()
+            {
                 ActionName = "Trim All Inner Spaces",
                 ExtensionMethod = "TrimInnerSpaces",
-                OriginalString = "This is     string with  multiple   spaces in this paragraph. It      should remove all     unnecessary spaces  from the string.       ", 
+                OriginalString = "This is     string with  multiple   spaces in this paragraph. It      should remove all     unnecessary spaces  from the string.       ",
             };
 
             objTrimInner.NormalizedResult = objTrimInner.OriginalString.TrimInnerSpaces();
 
             result.Add(objTrimInner);
 
+
+            var objUrlEncode = new StringStatus<string>
+            {
+                ActionName = "Url encode",
+                ExtensionMethod = "UrlEncode",
+                OriginalString = "https://www.google.com/search?q=url encode example in c#"
+            };
+
+            objUrlEncode.NormalizedResult = objUrlEncode.OriginalString.UrlEncode();
+
+            result.Add(objUrlEncode);
 
             return View(result);
         }
@@ -40,7 +52,7 @@ namespace Application.Host.Controllers
         }
     }
 
-    public class StringStatus<T> where T: class
+    public class StringStatus<T> where T : class
     {
         public string ActionName { get; set; }
         public string ExtensionMethod { get; set; }

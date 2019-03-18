@@ -12,5 +12,12 @@ namespace Application.ExtensionHelper.Test.Tests
             string myString = "This is     string with  multiple   spaces in this paragraph. It      should remove all     unnecessary spaces  from the string.       ";
             string normalizedString = myString.TrimInnerSpaces();
         }
+
+        [TestMethod]
+        public void TestUrlEncoding()
+        {
+            string url = "https://www.google.com/search?q=url encode example";
+            string normalizedString = url.UrlEncode();
+        }
     }
 }

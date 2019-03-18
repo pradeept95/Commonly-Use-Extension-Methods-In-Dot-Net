@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading;
+using System.Web;
 
 namespace Application.Helpers.Extensions
 {
@@ -609,5 +610,52 @@ namespace Application.Helpers.Extensions
         {
             return Regex.Replace(input, @"\s+", " ");
         }
+
+        public static string UrlEncode(this string input)
+        {
+            return HttpUtility.UrlEncode(input);
+        }
+
+        public static string UrlEncodeUnicode(this string input)
+        {
+#pragma warning disable CS0618 // Type or member is obsolete
+            return HttpUtility.UrlEncodeUnicode(input);
+#pragma warning restore CS0618 // Type or member is obsolete
+        }
+        public static string UrlPathEncode(this string input)
+        {
+            return HttpUtility.UrlPathEncode(input);
+        }
+
+        public static string EscapeDataString(this string input)
+        {
+            return Uri.EscapeDataString(input);
+        }
+
+        public static string EscapeUriString(this string input)
+        {
+            return Uri.EscapeUriString(input);
+        }
+
+        public static string HtmlAttributeEncode(this string input)
+        {
+            return HttpUtility.HtmlAttributeEncode(input);
+        }
+
+        public static string HexEscaped(this string input)
+        {
+            // Uri.HexEscape can only handle the first 255 characters so for the 
+            //  Latin A-Extended characters, such as A, it will throw an 
+            //  ArgumentOutOfRange exception.                       
+            try
+            {
+                return Uri.HexEscape(input.ToCharArray()[0]);
+            }
+            catch
+            {
+                return "[OoR]";
+            }
+        }
+
     }
 }
