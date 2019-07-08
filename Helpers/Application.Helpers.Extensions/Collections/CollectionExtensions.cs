@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Application.Helpers.Extensions
+namespace AspNetCore.Extensions.Collections
 {
     /// <summary>
     /// Extension methods for Collections.

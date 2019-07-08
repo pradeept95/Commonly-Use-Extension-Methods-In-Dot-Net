@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <PackageProjectUrl>https://github.com/pradeept95/Commonly-Use-Extension-Methods-In-Dot-Net</PackageProjectUrl>
+    <Description>These are the commonly usable extension methods in asp.net core and mvc. Methods are usable in both core and mvc related projects. This Application.helpers.Extensions library contains extension method for the String, DataTables, List, Dictionary, Enumerable etc.</Description>
+    <PackageLicenseUrl>https://github.com/pradeept95/Commonly-Use-Extension-Methods-In-Dot-Net/blob/add-license-1/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/pradeept95/Commonly-Use-Extension-Methods-In-Dot-Net/tree/master/Helpers/Application.Helpers.Extensions</RepositoryUrl>
+    <PackageTags>AspNetCore, .Net, Extension, Helpers</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>AspNetCore.Helpers.Extensions</PackageId>
+  </PropertyGroup>
+
+</Project>

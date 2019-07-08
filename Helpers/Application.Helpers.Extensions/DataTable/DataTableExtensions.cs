@@ -5,7 +5,7 @@ using System.Dynamic;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Application.Helpers.Extensions
+namespace AspNetCore.Extensions.DataTables
 {
     public static class DataTableExtensions
     {

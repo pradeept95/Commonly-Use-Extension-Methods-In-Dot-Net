@@ -1,4 +1,5 @@
-﻿using Application.Helpers.Extensions;
+﻿using AspNetCore.Extensions;
+using AspNetCore.Extensions.Strings;
 using Microsoft.VisualStudio.TestTools.UnitTesting; 
 
 namespace Application.ExtensionHelper.Test.Tests

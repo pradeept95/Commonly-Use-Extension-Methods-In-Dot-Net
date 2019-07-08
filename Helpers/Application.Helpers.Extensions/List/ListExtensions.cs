@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Application.Helpers.Extensions
+namespace AspNetCore.Extensions.Lists
 {
     /// <summary>
     /// Extension methods for <see cref="IList{T}"/>.

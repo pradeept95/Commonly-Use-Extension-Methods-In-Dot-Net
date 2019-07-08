@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AspNetCore.Extensions.Collections;
+using System;
 using System.Globalization;
 using System.Linq;
 using System.Security.Cryptography;
@@ -7,7 +8,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Web;
 
-namespace Application.Helpers.Extensions
+namespace AspNetCore.Extensions.Strings
 {
     /// <summary>
     /// Extension methods for String class.

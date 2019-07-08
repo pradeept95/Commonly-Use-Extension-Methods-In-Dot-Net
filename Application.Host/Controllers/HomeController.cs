@@ -5,7 +5,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Application.Host.Models;
-using Application.Helpers.Extensions;
+using AspNetCore.Extensions;
+using AspNetCore.Extensions.Strings;
 
 namespace Application.Host.Controllers
 {

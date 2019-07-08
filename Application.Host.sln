@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{292FAB42-4
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Host", "Application.Host\Application.Host.csproj", "{012D1AF7-EC67-44B1-B4FE-2F80D718917E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.Helpers.Extensions", "Helpers\Application.Helpers.Extensions\Application.Helpers.Extensions.csproj", "{6AE479FE-F26F-44D0-8B38-161EBC5DE7C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Extensions", "Helpers\Application.Helpers.Extensions\AspNetCore.Extensions.csproj", "{6AE479FE-F26F-44D0-8B38-161EBC5DE7C6}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application.ExtensionHelper.Test", "Test\Application.ExtensionHelper.Test\Application.ExtensionHelper.Test.csproj", "{A53B02B0-4163-4AAE-9285-337C60D2CA09}"
 EndProject

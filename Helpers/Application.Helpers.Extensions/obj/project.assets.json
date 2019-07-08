@@ -694,9 +694,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\MyProj\\ExtensionHelper\\Helpers\\Application.Helpers.Extensions\\Application.Helpers.Extensions.csproj",
-      "projectName": "Application.Helpers.Extensions",
-      "projectPath": "E:\\MyProj\\ExtensionHelper\\Helpers\\Application.Helpers.Extensions\\Application.Helpers.Extensions.csproj",
+      "projectUniqueName": "E:\\MyProj\\ExtensionHelper\\Helpers\\Application.Helpers.Extensions\\AspNetCore.Extensions.csproj",
+      "projectName": "AspNetCore.Helpers.Extensions",
+      "projectPath": "E:\\MyProj\\ExtensionHelper\\Helpers\\Application.Helpers.Extensions\\AspNetCore.Extensions.csproj",
       "packagesPath": "C:\\Users\\pradeeppc\\.nuget\\packages\\",
       "outputPath": "E:\\MyProj\\ExtensionHelper\\Helpers\\Application.Helpers.Extensions\\obj\\",
       "projectStyle": "PackageReference",

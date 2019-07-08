@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Application.Helpers.Extensions
+namespace AspNetCore.Extensions.Enumerables
 {
     /// <summary> 
     /// Extension methods for <see cref="IEnumerable{T}"/>.
